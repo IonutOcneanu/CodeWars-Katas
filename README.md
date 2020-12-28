@@ -21,3 +21,4 @@ arrMinMax: https://jsfiddle.net/ty0hfudx/
 Kyu 6:  
 equalSidesArr: https://jsfiddle.net/ms0f24d5/  
 countingDuplicates: https://jsfiddle.net/9wy23o5j/
+splitString: https://jsfiddle.net/vf4ypLk3/
