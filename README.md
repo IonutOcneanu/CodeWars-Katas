@@ -2,6 +2,8 @@
 
 I use CodeWars for practice and fun. Gonna store my Katas here.
 
+Profile link: https://www.codewars.com/users/Lustopher
+
 Fiddle links:
 
 Kyu 8:
