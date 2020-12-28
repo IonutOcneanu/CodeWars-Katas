@@ -24,4 +24,4 @@ function index(array, n) {
   return nthPower;
 }
 
-//result.innerHTML = index([1, 2, 3, 4]);
+//result.innerHTML = index([1, 2, 3, 4], 2);
