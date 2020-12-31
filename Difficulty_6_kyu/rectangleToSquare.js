@@ -23,7 +23,7 @@ function sqInRect(lng, wth) {
   const arr = [];
 
   if (lng === wth) {
-    return arr.push(1);
+    return null;
   }
 
   while (lng != wth) {
