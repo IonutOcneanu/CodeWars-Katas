@@ -15,40 +15,29 @@ represented with the filled squares, a 2x2, represented with the hollow squares,
 ❒ ❒ ❒ ❒ ❒     ⬛ ⬛ ⬛ ▣ ▣
 */
 
-//TODO: It's something to do division and modulo between length and width.
+//TODO: I approached this the wrong way from the start.
 
 const result = document.getElementById("result");
 
 function sqInRect(lng, wth) {
   const arr = [];
-  const result = Math.floor(lng / wth);
-  const remainder = lng % wth;
-  // if (lng < wth) {
-  //   [lng, wth] = [wth, lng];
-  // } else if (lng === wth) {
-  //   return null;
-  // }
-  // console.log(lng, wth);
-  if (remainder === 0) {
-    for (let k = 0; k < result; k++) {
-      arr[k] = wth;
-    }
-  } else if (remainder !== 0) {
-    for (let k = 0; k < wth + result; k++) {
-      //TODO: The loop doesn't work with higher numbers-> need to change the upper limit
-      if (k < result) {
-        arr[k] = wth;
-      } else if (k == result || lng / (remainder * k) === 1.5) {
-        arr[k] = remainder;
-      } else if (k > result && lng / wth !== 1.5) {
-        arr[k] = 1;
-      }
+
+  if (lng === wth) {
+    return arr.push(1);
+  }
+
+  while (lng != wth) {
+    if (wth > lng) {
+      wth = wth - lng;
+      arr.push(lng);
+    } else if (lng > wth) {
+      lng = lng - wth;
+      arr.push(wth);
     }
   }
+  arr.push(wth);
   return arr;
 }
-
-console.log(sqInRect(11, 8));
 
 //result.innerHTML = sqInRect(5, 3);
 // result.innerHTML = sqInRect(5,5);
