@@ -15,7 +15,7 @@ enoughSpace: https://jsfiddle.net/cqb20nzj/
 Kyu 7:  
 validSpacing: https://jsfiddle.net/35u7k8oh/  
 palindrome: https://jsfiddle.net/Ljku5hwr/  
-nrLettersCityName: https://jsfiddle.net/h3dnsm4p/
+nrLettersCityName: https://jsfiddle.net/h3dnsm4p/  
 arrMinMax: https://jsfiddle.net/ty0hfudx/
 
 Kyu 6:  
